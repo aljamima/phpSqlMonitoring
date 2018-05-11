@@ -3,7 +3,7 @@
 	$db_host = "localhost";
 	$db_name = "jquery_crud";
 	$db_user = "root";
-	$db_pass = "password";
+	$db_pass = "poopoo11";
 	
 	try{
 		

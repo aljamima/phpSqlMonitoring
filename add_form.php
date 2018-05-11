@@ -18,18 +18,23 @@
     <table class='table table-bordered'>
  
         <tr>
-            <td>Employee Name</td>
-            <td><input type='text' name='emp_name' class='form-control' placeholder='EX : john doe' required /></td>
+            <td>Miner IP</td>
+            <td><input type='text' name='minerIp' class='form-control' placeholder='EX : 10.1.2.3' required /></td>
         </tr>
  
         <tr>
-            <td>Employee Department</td>
-            <td><input type='text' name='emp_dept' class='form-control' placeholder='EX : Web Design, App Design' required></td>
+            <td>Mac Address</td>
+            <td><input type='text' name='macAddress' class='form-control' placeholder='EX : AA:BB:CC:11:22:33' required></td>
         </tr>
  
         <tr>
-            <td>Employee Salary</td>
-            <td><input type='text' name='emp_salary' class='form-control' placeholder='EX : 180000' required></td>
+            <td>Physical Position</td>
+            <td><input type='text' name='location' class='form-control' placeholder='EX : 1-1-1-5' required></td>
+        </tr>
+
+        <tr>
+            <td>Expected HashRate</td>
+            <td><input type='text' name='hashrate' class='form-control' placeholder='EX : 13.5' required></td>
         </tr>
  
         <tr>

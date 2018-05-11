@@ -45,9 +45,9 @@ $(document).ready(function(){
 
 	<div class="container">
       
-        <h2 class="form-signin-heading">Employee Records.</h2><hr />
-        <button class="btn btn-info" type="button" id="btn-add"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; Add Employee</button>
-        <button class="btn btn-info" type="button" id="btn-view"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; View Employee</button>
+        <h2 class="form-signin-heading">Miners</h2><hr />
+        <button class="btn btn-info" type="button" id="btn-add"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; New Miner</button>
+        <button class="btn btn-info" type="button" id="btn-view"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; View Miners</button>
         <hr />
         
         <div class="content-loader">
@@ -55,33 +55,35 @@ $(document).ready(function(){
         <table cellspacing="0" width="100%" id="example" class="table table-striped table-hover table-responsive">
         <thead>
         <tr>
-        <th>Emp ID</th>
-        <th>Emp Name</th>
-        <th>department</th>
-        <th>salary</th>
-        <th>edit</th>
-        <th>delete</th>
+        <th>Miner ID</th>
+        <th>Miner IP</th>
+        <th>Mac Address</th>
+        <th>Location</th>
+        <th>HashRate</th>
+        <th>Edit</th>
+        <th>Delete</th>
         </tr>
         </thead>
         <tbody>
         <?php
         require_once 'dbconfig.php';
         
-        $stmt = $db_con->prepare("SELECT * FROM tbl_employees ORDER BY emp_id DESC");
+        $stmt = $db_con->prepare("SELECT * FROM tbl_miners ORDER BY minerId DESC");
         $stmt->execute();
 		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
 		{
 			?>
 			<tr>
-			<td><?php echo $row['emp_id']; ?></td>
-			<td><?php echo $row['emp_name']; ?></td>
-			<td><?php echo $row['emp_dept']; ?></td>
-			<td><?php echo $row['emp_salary']; ?></td>
+			<td><?php echo $row['minerId']; ?></td>
+			<td><?php echo $row['minerIp']; ?></td>
+			<td><?php echo $row['macAddress']; ?></td>
+			<td><?php echo $row['location']; ?></td>
+			<td><?php echo $row['hashrate']; ?></td>
 			<td align="center">
-			<a id="<?php echo $row['emp_id']; ?>" class="edit-link" href="#" title="Edit">
+			<a id="<?php echo $row['minerId']; ?>" class="edit-link" href="#" title="Edit">
 			<img src="edit.png" width="20px" />
             </a></td>
-			<td align="center"><a id="<?php echo $row['emp_id']; ?>" class="delete-link" href="#" title="Delete">
+			<td align="center"><a id="<?php echo $row['minerId']; ?>" class="delete-link" href="#" title="Delete">
 			<img src="delete.png" width="20px" />
             </a></td>
 			</tr>
@@ -97,16 +99,7 @@ $(document).ready(function(){
     
     <br />
     
-    <div class="container">
-      
-        <div class="alert alert-info">
-        <a href="http://www.codingcage.com/2015/12/simple-jquery-insert-update-delete-with.html" target="_blank">Tutorial Link</a>
-        </div>
 
-    </div>
-    
-
-    
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/datatables.min.js"></script>
 <script type="text/javascript" src="crud.js"></script>
