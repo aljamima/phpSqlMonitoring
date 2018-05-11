@@ -1,4 +1,5 @@
-readit
+readthischit<br />
+
 $> git clone https://github.com/aljamima/phpSqlMonitoring <br />
 $> cd phpSqlMonitoring<br />
 $> sudo apt install mysql-server apache2 php php-mysql php-mysqli phpmyadmin<br />
