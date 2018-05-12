@@ -2,7 +2,7 @@ readthischit<br />
 
 $> git clone https://github.com/aljamima/phpSqlMonitoring <br />
 $> cd phpSqlMonitoring<br />
-$> sudo apt install mysql-server apache2 php php-mysql php-mysqli phpmyadmin<br />
+$> sudo apt install mysql-server apache2 php php-mysql php-mysqli phpmyadmin libapache2-mod-php<br />
 <br />
 $> mysql_secure_installation # probably as sudo<br />
 $> mysql -u root -p   # to login to sql console<br />
