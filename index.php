@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Insert, Update, Delete using jQuery, PHP and MySQL</title>
+<title>Zoomhash Monitoring</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
 <link href="assets/datatables.min.css" rel="stylesheet" type="text/css">
@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	<div class="container">
       
-        <h2 class="form-signin-heading">Miners</h2><hr />
+        <h2 class="form-signin-heading">ZoomHash Monitoring</h2><hr />
         <button class="btn btn-info" type="button" id="btn-add"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; New Miner</button>
         <button class="btn btn-info" type="button" id="btn-view"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; View Miners</button>
         <hr />
