@@ -39,6 +39,11 @@ if($_GET['edit_id'])
         </tr>
  
         <tr>
+            <td>Miner Type</td>
+            <td><input type='text' name='minerType' class='form-control' value='<?php echo $row['minerType']; ?>' required></td>
+        </tr>
+
+        <tr>
             <td>Physical Location</td>
             <td><input type='text' name='location' class='form-control' value='<?php echo $row['location']; ?>' required></td>
         </tr>

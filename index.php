@@ -58,6 +58,7 @@ $(document).ready(function(){
         <th>Miner ID</th>
         <th>Miner IP</th>
         <th>Mac Address</th>
+        <th>Miner Type</th>
         <th>Location</th>
         <th>HashRate</th>
         <th>Edit</th>
@@ -77,6 +78,7 @@ $(document).ready(function(){
 			<td><?php echo $row['minerId']; ?></td>
 			<td><?php echo $row['minerIp']; ?></td>
 			<td><?php echo $row['macAddress']; ?></td>
+			<td><?php echo $row['minerType']; ?></td>
 			<td><?php echo $row['location']; ?></td>
 			<td><?php echo $row['hashrate']; ?></td>
 			<td align="center">

@@ -28,6 +28,11 @@
         </tr>
  
         <tr>
+            <td>Miner Type</td>
+            <td><input type='text' name='minerType' class='form-control' placeholder='EX : Antminer S9' required></td>
+        </tr>
+
+        <tr>
             <td>Physical Position</td>
             <td><input type='text' name='location' class='form-control' placeholder='EX : 1-1-1-5' required></td>
         </tr>
@@ -40,7 +45,7 @@
         <tr>
             <td colspan="2">
             <button type="submit" class="btn btn-primary" name="btn-save" id="btn-save">
-    		<span class="glyphicon glyphicon-plus"></span> Save this Record
+    		<span class="glyphicon glyphicon-plus"></span> Save Miner
 			</button>  
             </td>
         </tr>

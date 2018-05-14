@@ -6,14 +6,16 @@ require_once 'dbconfig.php';
 	{
 		$minerIp = $_POST['minerIp'];
 		$macAddress = $_POST['macAddress'];
+		$minerType = $_POST['minerType'];
 		$location = $_POST['location'];
 		$hashrate = $_POST['hashrate'];
 		
 		try{
 			
-			$stmt = $db_con->prepare("INSERT INTO tbl_miners(minerIp,macAddress,location,hashrate) VALUES(:ename, :edept, :esalary, :esalary2)");
+			$stmt = $db_con->prepare("INSERT INTO tbl_miners(minerIp,macAddress,minerType,location,hashrate) VALUES(:ename, :edept, :mtype, :esalary, :esalary2)");
 			$stmt->bindParam(":ename", $minerIp);
 			$stmt->bindParam(":edept", $macAddress);
+			$stmt->bindParam(":mtype", $minerType);
 			$stmt->bindParam(":esalary", $location);
 			$stmt->bindParam(":esalary2", $hashrate);
 			

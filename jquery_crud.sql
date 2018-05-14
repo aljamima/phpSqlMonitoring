@@ -30,8 +30,9 @@ CREATE TABLE IF NOT EXISTS `tbl_miners` (
   `minerId` int(11) NOT NULL AUTO_INCREMENT,
   `minerIp` varchar(15) NOT NULL,
   `macAddress` varchar(17) NOT NULL,
+  `minerType` varchar(30) NULL,
   `location` varchar(7) NOT NULL,
-  `hashrate` varchar(8) NOT NULL,
+  `hashrate` varchar(8) NULL,
   PRIMARY KEY (`minerId`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -39,9 +40,9 @@ CREATE TABLE IF NOT EXISTS `tbl_miners` (
 -- Dumping data for table `tbl_miners`
 --
 
-INSERT INTO `tbl_miners` (`minerId`, `minerIp`, `macAddress`, `location`, `hashrate`) VALUES
-(1, '10.1.2.3', 'aa:bb:cc:dd:ee:ff', '1-1-1-1', '13.50'),
-(2, '10.2.3.4', 'aa:bb:cc:aa:bb:cc', '1-1-1-2', '11.27');
+INSERT INTO `tbl_miners` (`minerId`, `minerIp`, `macAddress`, `minerType`, `location`, `hashrate`) VALUES
+(1, '10.1.2.3', 'aa:bb:cc:dd:ee:ff', 'Antminer S9', '1-1-1-1', '13.50'),
+(2, '10.2.3.4', 'aa:bb:cc:aa:bb:cc', 'Antminer L3', '1-1-1-2', '11.27');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
