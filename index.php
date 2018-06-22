@@ -61,6 +61,12 @@ $(document).ready(function(){
         <th>Miner Type</th>
         <th>Location</th>
         <th>HashRate</th>
+        <th>Max Temp</th>
+        <th>FarmName</th>
+        <th>Num Cards</th>
+        <th>Uptime</th>
+        <th>Pool User</th>
+        <th>Comments</th>
         <th>Edit</th>
         <th>Delete</th>
         </tr>
@@ -81,6 +87,12 @@ $(document).ready(function(){
 			<td><?php echo $row['minerType']; ?></td>
 			<td><?php echo $row['location']; ?></td>
 			<td><?php echo $row['hashrate']; ?></td>
+			<td><?php echo $row['maxTemp']; ?></td>
+			<td><?php echo $row['farmName']; ?></td>
+			<td><?php echo $row['numCards']; ?></td>
+			<td><?php echo $row['uptime']; ?></td>
+			<td><?php echo $row['poolUser']; ?></td>
+			<td><?php echo $row['comments']; ?></td>
 			<td align="center">
 			<a id="<?php echo $row['minerId']; ?>" class="edit-link" href="#" title="Edit">
 			<img src="edit.png" width="20px" />
