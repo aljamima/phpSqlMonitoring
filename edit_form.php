@@ -4,7 +4,7 @@ include_once 'dbconfig.php';
 if($_GET['edit_id'])
 {
 	$id = $_GET['edit_id'];	
-	$stmt=$db_con->prepare("SELECT * FROM tbl_miners WHERE minerId=:id");
+	$stmt=$db_con->prepare("SELECT * FROM miners WHERE minerId=:id");
 	$stmt->execute(array(':id'=>$id));	
 	$row=$stmt->fetch(PDO::FETCH_ASSOC);
 }

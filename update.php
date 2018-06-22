@@ -4,12 +4,11 @@ require_once 'dbconfig.php';
 	
 	if($_POST)
 	{
-		$minerId = $_POST['minerId']; #i dont know why but this var as named id not emp_id like the otheres... hmmm
+		$minerId = $_POST['minerId']; 
 		$minerIp = $_POST['minerIp'];
 		$macAddress = $_POST['macAddress'];
 		$minerType = $_POST['minerType'];
 		$location = $_POST['location'];
-		$minerId = $_POST['minerId'];
 		
 		$stmt = $db_con->prepare("UPDATE tbl_miners SET minerIp=:en, macAddress=:ed, minerType=:mt, location=:es WHERE minerId=:id");
 		$stmt->bindParam(":en", $minerIp);

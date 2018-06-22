@@ -69,7 +69,7 @@ $(document).ready(function(){
         <?php
         require_once 'dbconfig.php';
         
-        $stmt = $db_con->prepare("SELECT * FROM tbl_miners ORDER BY minerId DESC");
+        $stmt = $db_con->prepare("SELECT * FROM miners ORDER BY minerId DESC");
         $stmt->execute();
 		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
 		{

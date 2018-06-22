@@ -1,9 +1,9 @@
 <?php
 
 	$db_host = "localhost";
-	$db_name = "jquery_crud";
+	$db_name = "minerDb";
 	$db_user = "root";
-	$db_pass = "poopoo11";
+	$db_pass = "Frostfiredragon1!!";
 	
 	try{
 		

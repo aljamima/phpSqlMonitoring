@@ -12,7 +12,7 @@ require_once 'dbconfig.php';
 		
 		try{
 			
-			$stmt = $db_con->prepare("INSERT INTO tbl_miners(minerIp,macAddress,minerType,location,hashrate) VALUES(:ename, :edept, :mtype, :esalary, :esalary2)");
+			$stmt = $db_con->prepare("INSERT INTO miners(minerIp,macAddress,minerType,location,hashrate) VALUES(:ename, :edept, :mtype, :esalary, :esalary2)");
 			$stmt->bindParam(":ename", $minerIp);
 			$stmt->bindParam(":edept", $macAddress);
 			$stmt->bindParam(":mtype", $minerType);
